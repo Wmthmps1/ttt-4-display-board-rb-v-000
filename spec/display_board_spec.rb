@@ -168,7 +168,7 @@ describe "#display_board in 'lib/display_board.rb" do
       # Uncomment the following lines of code by removing the # at line start.
       # Then edit the following lines to represent a board entirely filled with X.
       # Remember, every space and every character is important.
-    
+
       # *** Comment the line below by adding a # at the line start ***
       # expect(true).to be(true)
     end
@@ -176,7 +176,7 @@ describe "#display_board in 'lib/display_board.rb" do
     it 'prints an entire board full of Os' do
       # Can you copy the syntax of the tests above to write a test for a board
       # entirely filled with Os?
-      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"] 
+      board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
       output = capture_puts{ display_board(board) } if defined?(display_board)
       rows = output.split("\n")
       expect(rows[0]).to eq(" O | O | O ")
